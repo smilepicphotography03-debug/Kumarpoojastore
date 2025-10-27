@@ -185,7 +185,7 @@ const spiritualAccessories = [
                   <div className="text-sm text-zinc-400 mt-1">Products</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500">50+</div>
+                  <div className="text-3xl font-bold text-orange-500">20+</div>
                   <div className="text-sm text-zinc-400 mt-1">Years</div>
                 </div>
                 <div className="text-center">
