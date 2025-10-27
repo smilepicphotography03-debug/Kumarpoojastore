@@ -2,57 +2,110 @@ import { ShoppingBag, Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
 
 function App() {
   const featuredProducts = [
-    {
+  {
       name: 'Gopuram Meenakshi Kumkum',
       tagline: 'Pure temple-grade kumkum',
-      price: '₹45',
-      image: 'https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=800'
+      price: '₹20',
+      image: "/images/gopuram-meenakshi-kumkum.jpg"
     },
     {
       name: 'Premium Dhoop Cups',
       tagline: 'Long-lasting fragrance',
-      price: '₹120',
-      image: 'https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=800'
+      price: '₹80',
+      image: "/images/dhoop-cup.jpg"
     },
     {
       name: 'Rudraksha Malai',
       tagline: 'Authentic 108 beads',
-      price: '₹850',
-      image: 'https://images.pexels.com/photos/6646914/pexels-photo-6646914.jpeg?auto=compress&cs=tinysrgb&w=800'
+      price: '₹150',
+      image: "/images/rudraksha-malai.jpg"
     },
     {
       name: 'Pancha Deepam Oil',
       tagline: 'Traditional lamp oil blend',
-      price: '₹180',
-      image: 'https://images.pexels.com/photos/3979193/pexels-photo-3979193.jpeg?auto=compress&cs=tinysrgb&w=800'
+      price: '₹200',
+      image: "/images/pancha-deepam-oil.jpg"
     },
     {
       name: 'Sandalwood Tablets',
       tagline: 'Pure chandan for tilak',
-      price: '₹320',
-      image: 'https://images.pexels.com/photos/4040629/pexels-photo-4040629.jpeg?auto=compress&cs=tinysrgb&w=800'
+      price: '₹20',
+      image: "/images/sandalwood-tablets.jpg"
     },
     {
       name: 'Cotton Wicks Bundle',
       tagline: 'Handmade traditional wicks',
-      price: '₹35',
-      image: 'https://images.pexels.com/photos/6646919/pexels-photo-6646919.jpeg?auto=compress&cs=tinysrgb&w=800'
+      price: '₹5',
+      image: "/images/Cotton Wicks.jpg"
     }
+
   ];
 
   const traditionalItems = [
-    { name: 'Turmeric Powder', price: '₹80', image: 'https://images.pexels.com/photos/4198367/pexels-photo-4198367.jpeg?auto=compress&cs=tinysrgb&w=600' },
-    { name: 'Sandalwood Tablets', price: '₹320', image: 'https://images.pexels.com/photos/4040629/pexels-photo-4040629.jpeg?auto=compress&cs=tinysrgb&w=600' },
-    { name: 'Nalangu Maavu', price: '₹95', image: 'https://images.pexels.com/photos/4198377/pexels-photo-4198377.jpeg?auto=compress&cs=tinysrgb&w=600' },
-    { name: 'Pure Neem Oil', price: '₹140', image: 'https://images.pexels.com/photos/4198451/pexels-photo-4198451.jpeg?auto=compress&cs=tinysrgb&w=600' }
+    { name: 'Turmeric Powder', price: '₹20', image: "/images/turmeric-powder.jpg" },
+    { name: 'Sandalwood Tablets', price: '₹20', image: "/images/sandalwood-tablets.jpg" },
+    { name: 'Nalangu Maavu', price: '₹60', image: "/images/nalangu-maavu.jpg" },
+    { name: 'Pure Neem Oil', price: '₹130', image: "/images/neem-oil.jpg" }
   ];
 
-  const spiritualAccessories = [
-    { name: 'Rudraksha Malai', price: '₹850', image: 'https://images.pexels.com/photos/6646914/pexels-photo-6646914.jpeg?auto=compress&cs=tinysrgb&w=600' },
-    { name: 'Tulasi Malai', price: '₹250', image: 'https://images.pexels.com/photos/6646919/pexels-photo-6646919.jpeg?auto=compress&cs=tinysrgb&w=600' },
-    { name: 'Cotton Wicks', price: '₹35', image: 'https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=600' },
-    { name: 'Vilaku Ghee', price: '₹220', image: 'https://images.pexels.com/photos/3979193/pexels-photo-3979193.jpeg?auto=compress&cs=tinysrgb&w=600' }
-  ];
+const spiritualAccessories = [
+  { name: 'Kumkum', price: '₹10', image: '/images/gopuram-meenakshi-kumkum.jpg' },
+  { name: 'Aragaja', price: '₹40', image: '/images/aragaja.jpg' },
+  { name: 'Thazhampoo Kumkum', price: '₹15', image: '/images/thazhampoo-kumkum.jpg' },
+  { name: 'Ven Kadugu', price: '₹60', image: '/images/ven-kadugu.jpg' },
+  { name: 'Padikaram', price: '₹60', image: '/images/padikaram.jpg' },
+  { name: 'Paruthi Vidhai', price: '₹50', image: '/images/paruthi-vidhai.jpg' },
+  { name: 'Vetiver', price: '₹30', image: '/images/vetiver.jpg' },
+  { name: 'Neeli Avuri', price: '₹50', image: '/images/neeli-avuri.jpg' },
+  { name: 'Nalangu Maavu', price: '₹60', image: '/images/nalangu-maavu.jpg' },
+  { name: 'Shikakai Powder', price: '₹20', image: '/images/shikakai-powder.jpg' },
+  { name: 'Turmeric Powder', price: '₹15', image: '/images/turmeric-powder.jpg' },
+  { name: 'Kasthuri Turmeric Powder', price: '₹40', image: '/images/kasthuri-turmeric-powder.jpg' },
+  { name: 'Chandan Powder', price: '₹15', image: '/images/chandan-powder.jpg' },
+  { name: 'Chandan Tikka Paste', price: '₹50', image: '/images/chandan-tikka-paste.jpg' },
+  { name: 'Sandalwood Tablets', price: '₹15', image: '/images/sandalwood-tablets.jpg' },
+  { name: 'Virali Manjal', price: '₹20', image: '/images/virali-manjal.jpg' },
+  { name: 'Kizhangu Manjal', price: '₹20', image: '/images/kizhangu-manjal.jpg' },
+  { name: 'Dhoop Cup', price: '₹70', image: '/images/dhoop-cup.jpg' },
+  { name: 'Dasangam', price: '₹50', image: '/images/dasangam.jpg' },
+  { name: 'Panchakavya Dhoop Cup', price: '₹100', image: '/images/panchakavya-dhoop-cup.jpg' },
+  { name: 'Sambrani', price: '₹30', image: '/images/sambrani.jpg' },
+  { name: 'Green Camphor', price: '₹50', image: '/images/green-camphor.jpg' },
+  { name: 'Incense Sticks / Agarbatti', price: '₹50', image: '/images/incense-sticks-agarbatti.jpg' },
+  { name: 'Camphor Katti', price: '₹40', image: '/images/camphor-katti.jpg' },
+  { name: 'Pure Neem Oil', price: '₹130', image: '/images/neem-oil.jpg' },
+  { name: 'Vilaku Ghee', price: '₹50', image: '/images/vilaku-ghee.jpg' },
+  { name: 'Mahua Seed Oil (Ilupai Oil)', price: '₹130', image: '/images/mahua-seed-oil.jpg' },
+  { name: 'Puja Ghee', price: '₹120', image: '/images/puja-ghee.jpg' },
+  { name: 'Pancha Deepam Oil / Lamp Oil', price: '₹180', image: '/images/pancha-deepam-oil.jpg' },
+  { name: 'Sandhanadi Thailam', price: '₹80', image: '/images/chandanadi-thailam.jpg' },
+  { name: 'Deepam Lamp Oil', price: '₹200', image: '/images/deepam-lamp-oil.jpg' },
+  { name: 'Rose Water (Paneer)', price: '₹50', image: '/images/rose-water.jpg' },
+  { name: 'Wicks - Green', price: '₹10', image: '/images/cotton-wicks-green.jpg' },
+  { name: 'Cotton Wicks', price: '₹15', image: '/images/Cotton Wicks.jpg' },
+  { name: 'Vaazhai Thandu Thiri', price: '₹10', image: '/images/vaazhai-thandu-thiri.jpg' },
+  { name: 'Mupari Nool', price: '₹30', image: '/images/mupari-nool.jpg' },
+  { name: 'Wicks - Black', price: '₹10', image: '/images/cotton-wicks-black.jpg' },
+  { name: 'Wicks - Red', price: '₹10', image: '/images/cotton-wicks-red.jpg' },
+  { name: 'Wicks - Yellow', price: '₹10', image: '/images/cotton-wicks-yellow.jpg' },
+  { name: 'Thamarai Thiri', price: '₹10', image: '/images/thamarai-thiri.jpg' },
+  { name: 'Namakatti', price: '₹15', image: '/images/namakatti.jpg' },
+  { name: 'Abishegam Powder', price: '₹20', image: '/images/abhishegam-powder.jpg' },
+  { name: 'Theertha Powder', price: '₹50', image: '/images/theertha-powder.jpg' },
+  { name: 'Punugu', price: '₹50', image: '/images/punugu.jpg' },
+  { name: 'Vibhuti', price: '₹15', image: '/images/vibhuti.jpg' },
+  { name: 'Sandal Malai', price: '₹150', image: '/images/sandal-malai.jpg' },
+  { name: 'Tulasi Malai', price: '₹150', image: '/images/tulasi-malai.jpg' },
+  { name: 'Rudraksha Malai', price: '₹150', image: '/images/rudraksha-malai.jpg' },
+  { name: 'Darbai Grass', price: '₹15', image: '/images/darbai-grass.jpg' },
+  { name: 'Pooja Vessel Cleaning Powder', price: '₹20', image: '/images/pooja-vessel-cleaning-powder.jpg' },
+  { name: 'Nelpori', price: '₹30', image: '/images/nelpori.jpg' },
+  { name: 'Navadhanyam Set', price: '₹50', image: '/images/navadhanyam-set.jpg' },
+  { name: 'Attar', price: '₹80', image: '/images/attar.jpg' },
+  { name: 'Javadhu Powder', price: '₹35', image: '/images/javadhu-powder.jpg' },
+  { name: 'Kolam Powder', price: '₹30', image: '/images/kolam-powder.jpg' }
+];
+
 
   return (
     <div className="min-h-screen bg-zinc-950 text-white">
@@ -100,7 +153,7 @@ function App() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <div className="inline-block px-4 py-2 bg-orange-500/10 border border-orange-500/30 rounded-full">
-                <span className="text-orange-500 font-semibold text-sm">Since 1968 • Trusted Quality</span>
+                <span className="text-orange-500 font-semibold text-sm">Since 2005 • Trusted Quality</span>
               </div>
               <h2 className="text-6xl font-bold leading-tight">
                 Kumar Pooja<br />
@@ -146,18 +199,19 @@ function App() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="rounded-2xl overflow-hidden shadow-2xl shadow-orange-500/20 transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kumkum" className="w-full h-48 object-cover" />
+                    <img  src="/images/diwali.jpg"   alt="Diwali" className="w-full h-48 object-cover"  />
+          
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-2xl shadow-orange-500/20 transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://images.pexels.com/photos/4040629/pexels-photo-4040629.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sandalwood" className="w-full h-64 object-cover" />
+                    <img  src="/images/dussehra.jpg"   alt="Dussehra" className="w-full h-64 object-cover"  />
                   </div>
                 </div>
                 <div className="space-y-4 pt-12">
                   <div className="rounded-2xl overflow-hidden shadow-2xl shadow-orange-500/20 transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://images.pexels.com/photos/3979193/pexels-photo-3979193.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Oil Lamp" className="w-full h-64 object-cover" />
+                    <img  src="/images/ganesh_chaturthi.jpg"   alt="Ganesh Chaturthi" className="w-full h-64 object-cover"  />
                   </div>
                   <div className="rounded-2xl overflow-hidden shadow-2xl shadow-orange-500/20 transform hover:scale-105 transition-transform duration-300">
-                    <img src="https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dhoop" className="w-full h-48 object-cover" />
+                    <img  src="/images/holi.jpg"   alt="Holi" className="w-full h-48 object-cover"  />
                   </div>
                 </div>
               </div>
@@ -196,7 +250,7 @@ function App() {
                       rel="noopener noreferrer"
                       className="bg-gradient-to-r from-orange-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg shadow-orange-500/30"
                     >
-                      Order Now
+                      Buy Now
                     </a>
                   </div>
                 </div>
@@ -234,9 +288,17 @@ function App() {
                   <h4 className="text-lg font-bold mb-3">{item.name}</h4>
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-amber-500">{item.price}</span>
-                    <button className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md">
-                      Add
-                    </button>
+                    <a
+                    href={`https://wa.me/919489657260?text=I'm interested in ${item.name}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-amber-600 hover:bg-amber-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md"
+                    >
+                      Buy Now
+                      </a>
+
+                    
+                    
                   </div>
                 </div>
               </div>
@@ -266,9 +328,13 @@ function App() {
                   <h4 className="text-lg font-bold mb-3">{item.name}</h4>
                   <div className="flex items-center justify-between">
                     <span className="text-xl font-bold text-orange-500">{item.price}</span>
-                    <button className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md">
-                      Add
-                    </button>
+                    <a
+                    href={`https://wa.me/919489657260?text=I'm interested in ${item.name}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-md">
+                    Buy Now
+                    </a>
                   </div>
                 </div>
               </div>
@@ -371,7 +437,7 @@ function App() {
                 <h3 className="text-4xl font-bold mt-4 mb-6">About Kumar Pooja Store</h3>
               </div>
               <p className="text-zinc-300 text-lg leading-relaxed text-center mb-8">
-                Serving Alangulam and beyond since 1968, Kumar Pooja Store has been the trusted source for authentic South Indian pooja essentials. With over 55 carefully curated products, we honor our rich spiritual heritage by providing only the highest quality traditional items. Every product is selected with devotion and tested for authenticity, ensuring that your sacred rituals are performed with genuine materials that respect our ancient traditions.
+                Serving Alangulam and beyond since 2005, Kumar Pooja Store has been the trusted source for authentic South Indian pooja essentials. With over 55 carefully curated products, we honor our rich spiritual heritage by providing only the highest quality traditional items. Every product is selected with devotion and tested for authenticity, ensuring that your sacred rituals are performed with genuine materials that respect our ancient traditions.
               </p>
               <div className="grid md:grid-cols-3 gap-8 mt-12">
                 <div className="text-center">
@@ -385,7 +451,7 @@ function App() {
                   <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-amber-600 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg shadow-orange-500/30">
                     <Clock className="w-8 h-8 text-white" />
                   </div>
-                  <h4 className="font-bold text-lg mb-2">50+ Years</h4>
+                  <h4 className="font-bold text-lg mb-2">20+ Years</h4>
                   <p className="text-zinc-400 text-sm">Trusted tradition</p>
                 </div>
                 <div className="text-center">
@@ -484,7 +550,7 @@ function App() {
               </a>
               <div className="mt-8 pt-8 border-t border-zinc-800">
                 <p className="text-zinc-500 text-sm text-center">
-                  Orders placed before 6 PM are typically processed the same day
+                  Orders placed before 11 AM are typically processed the same day
                 </p>
               </div>
             </div>
@@ -505,7 +571,7 @@ function App() {
                 </div>
               </div>
               <p className="text-zinc-400 text-sm leading-relaxed">
-                Your trusted source for authentic South Indian pooja essentials since 1968.
+                Your trusted source for authentic South Indian pooja essentials since 2005.
               </p>
             </div>
 
@@ -555,10 +621,7 @@ function App() {
               <p className="text-zinc-400 text-sm text-center md:text-left">
                 Copyright © 2025 Kumar Pooja Store. All rights reserved.
               </p>
-              <div className="flex items-center gap-2">
-                <span className="text-zinc-500 text-sm">Made with devotion in Alangulam</span>
-                <span className="text-orange-500">🙏</span>
-              </div>
+              
             </div>
           </div>
         </div>
